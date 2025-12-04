@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments - Lecture Timetable</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>Assignments</header>
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="timetable.html">Timetable</a>
+    <button id="logout-btn">Logout</button>
+  </nav>
+  <section>
+    <form id="assignment-form">
+      <h2>Add Assignment</h2>
+      <select id="assignment-course-select"></select>
+      <input type="text" id="assignment-title" placeholder="Assignment Title" required>
+      <input type="date" id="assignment-due-date" required>
+      <button type="submit">Add Assignment</button>
+    </form>
+    <ul id="assignment-list"></ul>
+  </section>
+</body>
+</html>

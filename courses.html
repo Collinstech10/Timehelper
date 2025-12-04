@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Lecture Timetable</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>Courses</header>
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="assignments.html">Assignments</a>
+    <button id="logout-btn">Logout</button>
+  </nav>
+  <section>
+    <form id="course-form">
+      <h2>Add Course</h2>
+      <input type="text" id="course-name" placeholder="Course Name" required>
+      <input type="text" id="lecturer-name" placeholder="Lecturer Name" required>
+      <input type="color" id="course-color" value="#3498db">
+      <button type="submit">Add Course</button>
+    </form>
+    <div id="course-list"></div>
+  </section>
+</body>
+</html>

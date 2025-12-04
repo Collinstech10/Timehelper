@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Lecture Timetable</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>Dashboard</header>
+  <nav>
+    <a href="courses.html">Courses</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="assignments.html">Assignments</a>
+    <button id="logout-btn">Logout</button>
+  </nav>
+  <section>
+    <h2>Today's Schedule</h2>
+    <div id="today-classes"></div>
+    <div id="next-class-countdown"></div>
+  </section>
+</body>
+</html>
