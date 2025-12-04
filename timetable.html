@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable - Lecture Timetable</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>Timetable</header>
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <button id="logout-btn">Logout</button>
+  </nav>
+  <section>
+    <form id="timetable-form">
+      <h2>Add Timetable Entry</h2>
+      <select id="course-select"></select>
+      <select id="day-select">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+      </select>
+      <input type="time" id="start-time" required>
+      <input type="time" id="end-time" required>
+      <input type="text" id="venue" placeholder="Venue" required>
+      <button type="submit">Add Timetable</button>
+    </form>
+    <div id="timetable-list"></div>
+  </section>
+</body>
+</html>
